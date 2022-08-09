@@ -19,7 +19,14 @@ inputForm.addEventListener("submit", (e) => {
   inputFlavour = e.target[2].value;
   inputText = e.target[0].value;
   inputScore = e.target[3].value;
-  if (inputTitle !== "" && inputScore !== "" && inputText !== "" && inputFlavour !== "") {
+  if (
+    inputTitle !== "" &&
+    inputScore !== "" &&
+    inputText !== "" &&
+    inputFlavour !== "" &&
+    inputScore >= 0 &&
+    inputScore < 100
+  ) {
     let newTabak = [[`${inputTitle}`], [`${inputFlavour}`], [`${inputText}`], [`${inputScore}`]];
     tabakArray.push(newTabak);
 
@@ -42,7 +49,7 @@ inputForm.addEventListener("submit", (e) => {
     cardContainer.append(card);
     reset();
   } else {
-    alert("Bitte alle Felder ausfüllen!");
+    alert("Bitte alle Felder richtig ausfüllen!");
   }
 });
 
