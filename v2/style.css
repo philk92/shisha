@@ -95,3 +95,6 @@ tr:last-of-type td:last-of-type {
 .scrolli {
   overflow-x: auto;
 }
+tr td:last-of-type {
+  text-align: end;
+}

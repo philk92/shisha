@@ -4,12 +4,12 @@ let inputFlavour;
 let inputText;
 let inputScore;
 const tabakArray = [
-  [["Black Nana"], ["Traube-Minze"], ["Nameless"], ["85"]],
+  [["Black Nana"], ["Traube-Minze, süß mit ordentlicher Frische"], ["Nameless"], ["85"]],
   [["African Queen"], ["Beeren-Mix"], ["O's Tobacco "], ["88"]],
   [["Zitrone-Minze"], ["Zitrone-Minze"], ["Fog Your Life"], ["80"]],
   [["Saurer Apfel"], ["Apfel-Minze"], ["Fog Your Life"], ["75"]],
   [["Blut gegen Blut"], ["Zitrus und Drachenfrucht"], ["Al Massiva"], ["85"]],
-  [["Handgemacht & Illegal"], ["Ananas - Kiwi"], ["Al Massiva"], ["90"]],
+  [["Handgemacht & Illegal"], ["Ananas - Kiwi, schmeckt wie Birne. Geht immer!"], ["Al Massiva"], ["90"]],
 ];
 let newTabak;
 let object;
@@ -37,7 +37,7 @@ inputForm.addEventListener("submit", (e) => {
     cardText.innerText = inputText;
     cardTitle.innerText = inputTitle;
     cardFlavour.innerText = inputFlavour;
-    cardScore.innerText = `Score: ${inputScore / 10}`;
+    cardScore.innerText = `${inputScore / 10}`;
     card.append(cardText, cardTitle, cardFlavour, cardScore);
     cardContainer.append(card);
     reset();
@@ -65,7 +65,7 @@ function updateSite() {
     cardTitle.innerText = tabakArray[i][0];
     cardFlavour.innerText = tabakArray[i][1];
     cardText.innerText = tabakArray[i][2];
-    cardScore.innerText = `Score: ${tabakArray[i][3] / 10}`;
+    cardScore.innerText = `${tabakArray[i][3] / 10}`;
     card.append(cardText, cardTitle, cardFlavour, cardScore);
     cardContainer.append(card);
   }
