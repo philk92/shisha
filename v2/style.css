@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Luckiest+Guy&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243b55, #141e30); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.centerAll {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.input-group-text {
+  width: 150px;
+
+  border: none;
+}
+
+.input-group {
+  margin-bottom: 6px;
+}
+
+.dnone {
+  display: none;
+}
+
+.toggleDiv {
+  margin-top: 10px;
+}
+
+#inputForm {
+  border: none;
+  padding: 0;
+  background: none;
+}
+h1 {
+  color: white;
+  margin: 90px;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 80px;
+}
+
+table.blueTable {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 1px 3px 80px -9px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 3px 80px -9px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 3px 80px -9px rgba(0, 0, 0, 0.5);
+  font-family: "Lato", sans-serif;
+}
+table.blueTable td,
+table.blueTable th {
+  border: 0px solid #aaaaaa;
+  padding: 8px 12px;
+}
+
+table.blueTable tr:nth-child(even) {
+  background: #f0f0f0;
+}
+table.blueTable thead {
+  background: #1379f5;
+  cursor: pointer;
+}
+table.blueTable thead th {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+th:first-of-type {
+  border-top-left-radius: 10px;
+}
+th:last-of-type {
+  border-top-right-radius: 10px;
+}
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 10px;
+}
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 10px;
+}
+.scrolli {
+  overflow-x: auto;
+}
